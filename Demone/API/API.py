@@ -150,10 +150,10 @@ class API:
             cassa.anomalie = []
             for cod, desc in reparti.items():
                 
-                result = self._execute_query_DB(f"select SUM(ven_tot), count(*) from vendite_stor where ven_sgn= '-' and ven_npo='{cassa.id_cassa}' and ven_sta in('V','R','S') and ven_dat = {{ts '{self.request_time} '}} and ven_rep = '{cod.strip()}' ")
+                result = self._execute_query_DB(f"select SUM(ven_tot), COUNT(DISTINCT ven_nsc) from vendite_stor where ven_sgn= '-' and ven_npo='{cassa.id_cassa}' and ven_sta in('V','R','S') and ven_dat = {{ts '{self.request_time} '}} and ven_rep = '{cod.strip()}' ")
                 reparto_neg, presenze_neg = result[0][0], result[0][1]
-                
-                result = self._execute_query_DB(f"select SUM(ven_tot), count(*) from vendite_stor where ven_sgn= '+' and ven_npo='{cassa.id_cassa}' and ven_sta in('V','R','S') and ven_dat = {{ts '{self.request_time} '}} and ven_rep = '{cod.strip()}' ")
+
+                result = self._execute_query_DB(f"select SUM(ven_tot), COUNT(DISTINCT ven_nsc) from vendite_stor where ven_sgn= '+' and ven_npo='{cassa.id_cassa}' and ven_sta in('V','R','S') and ven_dat = {{ts '{self.request_time} '}} and ven_rep = '{cod.strip()}' ")
                 reparto_pos, presenze_pos = result[0][0], result[0][1]
                 
                 if presenze_pos == 0: continue
