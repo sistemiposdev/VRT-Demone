@@ -4,13 +4,16 @@
         "codice_negozio": "0003",
         "server": "",
         "licenza": "",
-        "nome": "PDV Venafro",
-        "codice_app": "VRT2021",
-        "id_cliente": "",
-        "postazione": "999"
+        "nome": "PDV Venafro"
     },
     "licenze": {
-        "endpoint": "https://www.licenses.sistemiposreport.store/licenze"
+        "database": {
+            "db_address": "mysql.stats.sistemiposreport.store",
+            "db_name": "masterpos",
+            "db_port": 3306,
+            "db_username": "",
+            "db_password": ""
+        }
     },
     "in": {
         "database": {
@@ -24,6 +27,12 @@
         }
     },
     "out": {
-        "endpoint": "https://vrt.sistemiposreport.store/api/sync"
+        "database": {
+			"db_address": "vrt.sistemiposreport.store",
+			"db_name": "vrt_stats",
+			"db_port": 3306,
+			"db_username": "",
+			"db_password": ""
+        }
     }
 }

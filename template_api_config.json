@@ -1,0 +1,29 @@
+{
+    "applicazione": {
+        "funzionamento": "DB",
+        "codice_negozio": "",
+        "server": "",
+        "licenza": "",
+        "nome": "",
+        "codice_app": "VRT2021",
+        "id_cliente": "",
+        "postazione": "999"
+    },
+    "licenze": {
+        "endpoint": "https://www.licenses.sistemiposreport.store/licenze"
+    },
+    "in": {
+        "database": {
+            "db_address": "localhost\\SQLEXPRESS",
+            "db_name": "uakaridbo",
+            "db_username": "sa",
+            "db_password": "uakarixpe"
+        },
+        "API": {
+            "token_autorizzazione": ""
+        }
+    },
+    "out": {
+        "endpoint": "https://www.vrt.sistemiposreport.store/api/sync"
+    }
+}
