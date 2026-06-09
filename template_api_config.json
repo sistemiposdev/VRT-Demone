@@ -2,6 +2,7 @@
     "applicazione": {
         "funzionamento": "DB",
         "codice_negozio": "",
+        "codice_negozio_licenza": "",
         "server": "",
         "licenza": "",
         "nome": "",

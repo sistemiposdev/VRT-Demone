@@ -16,7 +16,7 @@ from API.Model.Negozio import Negozio as ModelNegozio
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(os.path.dirname(SCRIPT_DIR))
 
-logging.basicConfig(filename='demone.log',
+logging.basicConfig(filename=os.path.join(SCRIPT_DIR, 'demone.log'),
                     level=logging.DEBUG, filemode='w')
 
 versione_demone = "1.1 stabile"

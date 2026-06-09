@@ -41,7 +41,8 @@ Il demone supporta due modalita':
 2. Creare una cartella con il nome di riferimento per i negozi oppure usarne una gia' presente
 3. Creare un file di configurazione nel formato xxxx_config.json (es. 0001_config.json)
 4. Seguire il file `template_api_config.json` per l'inserimento dei dati:
-    - `applicazione.codice_negozio` — Codice del negozio
+    - `applicazione.codice_negozio` — Codice del negozio (usato per la validazione BUFFER_INFO)
+    - `applicazione.codice_negozio_licenza` — Codice negozio della licenza (usato per la ricerca della licenza nell'endpoint)
     - `applicazione.licenza` — UUID della licenza nel DB licenze
     - `applicazione.nome` — Nome del punto vendita
     - `applicazione.id_cliente` — ID cliente associato alla licenza

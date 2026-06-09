@@ -22,7 +22,7 @@ def verifica_licenza():
     payload = {
         "codiceApp": configuration["applicazione"]["codice_app"],
         "idCliente": configuration["applicazione"]["id_cliente"],
-        "codiceNegozio": configuration["applicazione"]["codice_negozio"],
+        "codiceNegozio": configuration["applicazione"]["codice_negozio_licenza"],
         "postazione": configuration["applicazione"]["postazione"]
     }
 
