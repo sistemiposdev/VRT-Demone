@@ -75,10 +75,12 @@ Il demone supporta due modalita':
 ### Modalita' Endpoint REST
 
 Stessi passaggi della modalita' MySQL diretto, con una sola differenza al punto 5:
-    ```
-    cd C:\sistemipos
-    C:\git\bin\git clone -b peppe-dev-v3 https://github.com/sistemiposdev/VRT-Demone.git VendutoRealTime
-    ```
+
+```
+cd C:\sistemipos
+C:\git\bin\git clone -b peppe-dev-v3 https://github.com/sistemiposdev/VRT-Demone.git VendutoRealTime
+```
+
 Il parametro `-b peppe-dev-v3` clona direttamente il branch con la modalita' endpoint.
 
 ---
